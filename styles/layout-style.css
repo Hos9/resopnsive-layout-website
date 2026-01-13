@@ -1,7 +1,7 @@
 .container > * {
   background-color: blanchedalmond;
   border: 5px solid rgb(137, 158, 19);
-  padding: 20pxgit ;
+  padding: 20pxgit;
 }
 
 header {
@@ -36,4 +36,18 @@ footer {
     "navbar main main sidebar"
     "navbar main main advertise"
     "footer footer footer footer";
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "header"
+      "navbar"
+      "main"
+      "sidebar"
+      "advertise"
+      "footer";
+  }
 }
